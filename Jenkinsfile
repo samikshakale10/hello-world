@@ -7,7 +7,9 @@ pipeline{
         test_var = "a"
         file = 'test.txt,1st_Discussion_Yuvraj.txt,test1.txt'
     }
-    properties([pipelineTriggers([githubPush()])])
+    triggers {
+        githubpush()
+    }
     stages{
         /*stage ('Test file existence'){
             steps{
