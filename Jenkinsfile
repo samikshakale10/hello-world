@@ -8,7 +8,7 @@ pipeline{
         file = 'test.txt,1st_Discussion_Yuvraj.txt,test1.txt'
     }
     triggers {
-        githubpush()
+        githubPush()
     }
     stages{
         /*stage ('Test file existence'){
