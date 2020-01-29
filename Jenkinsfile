@@ -1,2 +1,2 @@
 echo "hello"
-echo "${BRANCH}"
+echo "${BRANCH_NAME}"
